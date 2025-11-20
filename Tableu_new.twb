@@ -1,0 +1,1859 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Tableu1_17635361752290' path='/workbooks' revision='1.6' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Global_Mobile_Prices_2025_Extended' inline='true' name='federated.0ikbl6o11iv8oz138xem004r5sdk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Global_Mobile_Prices_2025_Extended' name='textscan.00qfv7g1s8ft1x198n067031rmxw'>
+            <connection class='textscan' directory='D:/MY FOLDER/LATIHAN/LAT 1' filename='Global_Mobile_Prices_2025_Extended.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.00qfv7g1s8ft1x198n067031rmxw' name='Global_Mobile_Prices_2025_Extended.csv' table='[Global_Mobile_Prices_2025_Extended#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='brand' ordinal='0' />
+            <column datatype='string' name='model' ordinal='1' />
+            <column datatype='integer' name='price_usd' ordinal='2' />
+            <column datatype='integer' name='ram_gb' ordinal='3' />
+            <column datatype='integer' name='storage_gb' ordinal='4' />
+            <column datatype='integer' name='camera_mp' ordinal='5' />
+            <column datatype='integer' name='battery_mah' ordinal='6' />
+            <column datatype='real' name='display_size_inch' ordinal='7' />
+            <column datatype='integer' name='charging_watt' ordinal='8' />
+            <column datatype='string' name='5g_support' ordinal='9' />
+            <column datatype='string' name='os' ordinal='10' />
+            <column datatype='string' name='processor' ordinal='11' />
+            <column datatype='real' name='rating' ordinal='12' />
+            <column datatype='string' name='release_month' ordinal='13' />
+            <column datatype='integer' name='year' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[brand]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>brand</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[model]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>model</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_usd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price_usd]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>price_usd</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ram_gb</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ram_gb]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>ram_gb</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>storage_gb</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[storage_gb]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>storage_gb</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>camera_mp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[camera_mp]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>camera_mp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>battery_mah</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[battery_mah]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>battery_mah</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>display_size_inch</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[display_size_inch]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>display_size_inch</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charging_watt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[charging_watt]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>charging_watt</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5g_support</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[5g_support]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>5g_support</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>os</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[os]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>os</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>processor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[processor]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>processor</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[release_month]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>release_month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Global_Mobile_Prices_2025_Extended.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='5G Support' datatype='string' name='[5g_support]' role='dimension' type='nominal' />
+      <column caption='Global_Mobile_Prices_2025_Extended.csv' datatype='table' name='[__tableau_internal_object_id__].[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]' role='measure' type='quantitative' />
+      <column caption='Battery Mah' datatype='integer' name='[battery_mah]' role='measure' type='quantitative' />
+      <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+      <column caption='Camera Mp' datatype='integer' name='[camera_mp]' role='measure' type='quantitative' />
+      <column caption='Charging Watt' datatype='integer' name='[charging_watt]' role='measure' type='quantitative' />
+      <column caption='Display Size Inch' datatype='real' name='[display_size_inch]' role='measure' type='quantitative' />
+      <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
+      <column caption='Os' datatype='string' name='[os]' role='dimension' type='nominal' />
+      <column caption='Price Usd' datatype='integer' name='[price_usd]' role='measure' type='quantitative' />
+      <column caption='Processor' datatype='string' name='[processor]' role='dimension' type='nominal' />
+      <column caption='Ram Gb' datatype='integer' name='[ram_gb]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+      <column caption='Storage Gb' datatype='integer' name='[storage_gb]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[5g_support]' derivation='None' name='[none:5g_support:nk]' pivot='key' type='nominal' />
+      <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/dadri/AppData/Local/Temp/TableauTemp/#TableauTemp_1af7wa101d4vdu13m0skn18p32vf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>brand</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>992</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_usd</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[price_usd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_usd</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>723</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ram_gb</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ram_gb]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ram_gb</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>storage_gb</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[storage_gb]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>storage_gb</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>camera_mp</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[camera_mp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>camera_mp</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>battery_mah</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[battery_mah]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>battery_mah</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>display_size_inch</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[display_size_inch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>display_size_inch</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>charging_watt</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[charging_watt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>charging_watt</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>5g_support</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[5g_support]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>5g_support</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>os</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[os]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>os</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>processor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[processor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>processor</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[release_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_month</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Global_Mobile_Prices_2025_Extended.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:brand:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Apple&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Oppo&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;OnePlus&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Xiaomi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Samsung&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Infinix&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Realme&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Google&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Vivo&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:5g_support:nk]' type='palette'>
+            <map to='#359600'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#b1b1b1'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Global_Mobile_Prices_2025_Extended.csv' id='Global_Mobile_Prices_2025_Extended.csv_85D3B82123434CD4BDBE0EDD53582271'>
+            <properties context=''>
+              <relation connection='textscan.00qfv7g1s8ft1x198n067031rmxw' name='Global_Mobile_Prices_2025_Extended.csv' table='[Global_Mobile_Prices_2025_Extended#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='brand' ordinal='0' />
+                  <column datatype='string' name='model' ordinal='1' />
+                  <column datatype='integer' name='price_usd' ordinal='2' />
+                  <column datatype='integer' name='ram_gb' ordinal='3' />
+                  <column datatype='integer' name='storage_gb' ordinal='4' />
+                  <column datatype='integer' name='camera_mp' ordinal='5' />
+                  <column datatype='integer' name='battery_mah' ordinal='6' />
+                  <column datatype='real' name='display_size_inch' ordinal='7' />
+                  <column datatype='integer' name='charging_watt' ordinal='8' />
+                  <column datatype='string' name='5g_support' ordinal='9' />
+                  <column datatype='string' name='os' ordinal='10' />
+                  <column datatype='string' name='processor' ordinal='11' />
+                  <column datatype='real' name='rating' ordinal='12' />
+                  <column datatype='string' name='release_month' ordinal='13' />
+                  <column datatype='integer' name='year' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0ikbl6o11iv8oz138xem004r5sdk'>
+      <datasources>
+        <datasource caption='Global_Mobile_Prices_2025_Extended' name='federated.0ikbl6o11iv8oz138xem004r5sdk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0ikbl6o11iv8oz138xem004r5sdk'>
+        <column caption='5G Support' datatype='string' name='[5g_support]' role='dimension' type='nominal' />
+        <column-instance column='[5g_support]' derivation='None' name='[none:5g_support:nk]' pivot='key' type='nominal' />
+        <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+        <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:5g_support:nk]' member='&quot;No&quot;' />
+          <groupfilter function='member' level='[none:5g_support:nk]' member='&quot;Yes&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]'>
+        <groupfilter function='level-members' level='[none:release_month:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Harga Per Brand'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Franklin Gothic Demi' fontsize='22'>Median Harga Smartphone per Brand (2025)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Global_Mobile_Prices_2025_Extended' name='federated.0ikbl6o11iv8oz138xem004r5sdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ikbl6o11iv8oz138xem004r5sdk'>
+            <column caption='5G Support' datatype='string' name='[5g_support]' role='dimension' type='nominal' />
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column-instance column='[price_usd]' derivation='Median' name='[med:price_usd:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[5g_support]' derivation='None' name='[none:5g_support:nk]' pivot='key' type='nominal' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+            <column caption='Price Usd' datatype='integer' name='[price_usd]' role='measure' type='quantitative' />
+            <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ikbl6o11iv8oz138xem004r5sdk].[med:price_usd:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]</column>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575' fontsize='12'>Brand:&#9;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575' fontsize='12'>Median Price Usd:&#9;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.0ikbl6o11iv8oz138xem004r5sdk].[med:price_usd:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ikbl6o11iv8oz138xem004r5sdk].[med:price_usd:qk]</rows>
+        <cols>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]</cols>
+      </table>
+      <simple-id uuid='{EE678A11-6085-4619-B1CC-EC8400600863}' />
+    </worksheet>
+    <worksheet name='Jumlah Per Brand'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Franklin Gothic Demi' fontsize='22'>Jumlah Model Smartphone per Brand (2025)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Global_Mobile_Prices_2025_Extended' name='federated.0ikbl6o11iv8oz138xem004r5sdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ikbl6o11iv8oz138xem004r5sdk'>
+            <column caption='5G Support' datatype='string' name='[5g_support]' role='dimension' type='nominal' />
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column-instance column='[brand]' derivation='Count' name='[cnt:brand:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[5g_support]' derivation='None' name='[none:5g_support:nk]' pivot='key' type='nominal' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[rating]' role='measure' type='quantitative' />
+            <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:rating:qk]' included-values='in-range'>
+            <min>3.5</min>
+            <max>5.0</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:brand:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]</column>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]</column>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:rating:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:brand:qk]' value='80' />
+            <format attr='auto-subtitle' class='0' field='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:brand:qk]' scope='rows' value='true' />
+            <format attr='subtitle' class='0' field='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:brand:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:brand:qk]' scope='rows' value='Jumlah Model' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#757575' fontname='Tableau Medium' fontsize='12'>Brand&#9;: </run>
+                <run fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'><![CDATA[<[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#757575' fontname='Tableau Medium' fontsize='12'>Count of Brand&#9;: </run>
+                <run fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'><![CDATA[<[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:brand:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.263370156288147' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#72b966' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:brand:qk]</rows>
+        <cols>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]</cols>
+      </table>
+      <simple-id uuid='{05581D86-707E-472A-8B63-62B8C2239FB5}' />
+    </worksheet>
+    <worksheet name='Jumlah Rilis Per bulan'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Franklin Gothic Demi' fontsize='22'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Global_Mobile_Prices_2025_Extended' name='federated.0ikbl6o11iv8oz138xem004r5sdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ikbl6o11iv8oz138xem004r5sdk'>
+            <column caption='5G Support' datatype='string' name='[5g_support]' role='dimension' type='nominal' />
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column-instance column='[model]' derivation='Count' name='[cnt:model:qk]' pivot='key' type='quantitative' />
+            <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
+            <column-instance column='[5g_support]' derivation='None' name='[none:5g_support:nk]' pivot='key' type='nominal' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+            <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]'>
+            <groupfilter function='level-members' level='[none:brand:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:model:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]</column>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]</column>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:model:qk]' scope='cols' value='JUMLAH RILIS' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]</rows>
+        <cols>[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:model:qk]</cols>
+      </table>
+      <simple-id uuid='{CD8933B9-95AD-4DC2-8CE1-184DB323DD8C}' />
+    </worksheet>
+    <worksheet name='Komposisi 5G vs Non-5G per Brand'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Franklin Gothic Demi' fontsize='22'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Global_Mobile_Prices_2025_Extended' name='federated.0ikbl6o11iv8oz138xem004r5sdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ikbl6o11iv8oz138xem004r5sdk'>
+            <column caption='5G Support' datatype='string' name='[5g_support]' role='dimension' type='nominal' />
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column-instance column='[model]' derivation='Count' name='[cnt:model:qk]' pivot='key' type='quantitative' />
+            <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
+            <column-instance column='[5g_support]' derivation='None' name='[none:5g_support:nk]' pivot='key' type='nominal' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+            <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:model:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]</column>
+            <column>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:model:qk]' scope='rows' value='JUMLAH MODEL' />
+            <encoding attr='space' class='0' field='[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:model:qk]' field-type='quantitative' max='131' min='-66' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ikbl6o11iv8oz138xem004r5sdk].[cnt:model:qk]</rows>
+        <cols>[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]</cols>
+      </table>
+      <simple-id uuid='{CB18BB27-2385-4A56-9284-B00F922FC834}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Analisis Pasar Smartphone Tahun 2025'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='Global_Mobile_Prices_2025_Extended' name='federated.0ikbl6o11iv8oz138xem004r5sdk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0ikbl6o11iv8oz138xem004r5sdk'>
+        <column caption='5G Support' datatype='string' name='[5g_support]' role='dimension' type='nominal' />
+        <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+        <column-instance column='[5g_support]' derivation='None' name='[none:5g_support:nk]' pivot='key' type='nominal' />
+        <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+        <column-instance column='[rating]' derivation='None' name='[none:rating:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+        <column caption='Rating' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[rating]' role='measure' type='quantitative' />
+        <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='48569' id='5' param='horz' type-v2='layout-flow' w='47946' x='1905' y='1429'>
+            <zone h='48569' id='1' param='horz' type-v2='layout-flow' w='21190' x='1905' y='1429'>
+              <zone h='48569' id='3' name='Jumlah Per Brand' w='21190' x='1905' y='1429'>
+                <layout-cache cell-count-w='9' minheight='481' non-cell-size-w='80' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='48569' id='9' name='Harga Per Brand' w='26756' x='23095' y='1429'>
+              <layout-cache cell-count-w='9' non-cell-size-w='66' type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='48573' id='10' param='horz' type-v2='layout-flow' w='47946' x='1905' y='49998'>
+            <zone h='48573' id='11' name='Jumlah Rilis Per bulan' w='23973' x='1905' y='49998'>
+              <layout-cache cell-count-h='12' minwidth='180' non-cell-size-h='123' type-h='cell' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='48573' id='13' name='Komposisi 5G vs Non-5G per Brand' w='23973' x='25878' y='49998'>
+              <layout-cache cell-count-w='9' non-cell-size-w='59' type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='44258' id='15' param='vert' type-v2='layout-flow' w='48244' x='49851' y='54313' />
+          <zone h='8629' id='6' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type-v2='filter' w='48244' x='49851' y='1429'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='18358' id='7' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:rating:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='48244' x='49851' y='35955'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8632' id='8' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]' type-v2='filter' w='48244' x='49851' y='10058'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8631' id='12' name='Jumlah Rilis Per bulan' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]' type-v2='filter' w='48244' x='49851' y='18690'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8634' id='14' name='Komposisi 5G vs Non-5G per Brand' pane-specification-id='0' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type-v2='color' w='48244' x='49851' y='27321'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout active='true' name='Desktop'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='28'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98770' id='26' param='vert' type-v2='layout-flow' w='99166' x='417' y='615'>
+                <zone fixed-size='82' h='6923' id='27' is-fixed='true' type-v2='title' w='99166' x='417' y='615'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='91847' id='24' param='vert' type-v2='layout-flow' w='99166' x='417' y='7538'>
+                  <zone h='91847' id='22' type-v2='layout-basic' w='99166' x='417' y='7538'>
+                    <zone h='45915' id='5' param='horz' type-v2='layout-flow' w='86823' x='417' y='7538'>
+                      <zone h='45915' id='1' param='horz' type-v2='layout-flow' w='55260' x='417' y='7538'>
+                        <zone h='45915' id='3' name='Jumlah Per Brand' w='55260' x='417' y='7538'>
+                          <layout-cache cell-count-w='9' minheight='169' non-cell-size-w='80' type-h='scalable' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                      <zone h='45915' id='9' name='Harga Per Brand' w='31563' x='55677' y='7538'>
+                        <layout-cache cell-count-w='9' non-cell-size-w='66' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='45932' id='10' param='horz' type-v2='layout-flow' w='86823' x='417' y='53453'>
+                      <zone h='45932' id='11' name='Jumlah Rilis Per bulan' w='55625' x='417' y='53453'>
+                        <layout-cache cell-count-h='12' minwidth='180' non-cell-size-h='123' type-h='cell' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='45932' id='13' name='Komposisi 5G vs Non-5G per Brand' w='31198' x='56042' y='53453'>
+                        <layout-cache cell-count-w='9' non-cell-size-w='59' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='28543' id='15' param='vert' type-v2='layout-flow' w='12343' x='87240' y='70842' />
+                    <zone h='7267' id='6' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type-v2='filter' w='12343' x='87240' y='13307'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='6968' id='7' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:rating:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12343' x='87240' y='63874'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='22325' id='8' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]' type-v2='filter' w='12343' x='87240' y='20574'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='15357' id='12' name='Jumlah Rilis Per bulan' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]' type-v2='filter' w='12343' x='87240' y='42899'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='5618' id='14' name='Komposisi 5G vs Non-5G per Brand' pane-specification-id='0' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type-v2='color' w='12343' x='87240' y='58256'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone forceUpdate='true' h='5769' id='28' type-v2='text' w='12343' x='87240' y='7538'>
+                      <formatted-text>
+                        <run fontalignment='1' fontcolor='#000000' fontname='Franklin Gothic Demi' fontsize='12'>Silahkan Menggunakan </run>
+                        <run fontalignment='1'>Æ&#10;</run>
+                        <run fontalignment='1' fontcolor='#000000' fontname='Franklin Gothic Demi' fontsize='12'>Filter di bawah ini</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+        <devicelayout name='Tablet'>
+          <size maxheight='776' minheight='776' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='48569' id='5' param='horz' type-v2='layout-flow' w='47946' x='1905' y='1429'>
+                <zone h='48569' id='1' param='horz' type-v2='layout-flow' w='21190' x='1905' y='1429'>
+                  <zone h='48569' id='3' name='Jumlah Per Brand' w='21190' x='1905' y='1429'>
+                    <layout-cache cell-count-w='9' minheight='481' non-cell-size-w='80' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='48569' id='9' name='Harga Per Brand' w='26756' x='23095' y='1429'>
+                  <layout-cache cell-count-w='9' non-cell-size-w='66' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='48573' id='10' param='horz' type-v2='layout-flow' w='47946' x='1905' y='49998'>
+                <zone h='48573' id='11' name='Jumlah Rilis Per bulan' w='23973' x='1905' y='49998'>
+                  <layout-cache cell-count-h='12' minwidth='180' non-cell-size-h='123' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48573' id='13' name='Komposisi 5G vs Non-5G per Brand' w='23973' x='25878' y='49998'>
+                  <layout-cache cell-count-w='9' non-cell-size-w='59' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='44258' id='15' param='vert' type-v2='layout-flow' w='48244' x='49851' y='54313' />
+              <zone h='8629' id='6' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type-v2='filter' w='48244' x='49851' y='1429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18358' id='7' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:rating:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='48244' x='49851' y='35955'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8632' id='8' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]' type-v2='filter' w='48244' x='49851' y='10058'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8631' id='12' name='Jumlah Rilis Per bulan' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]' type-v2='filter' w='48244' x='49851' y='18690'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8634' id='14' name='Komposisi 5G vs Non-5G per Brand' pane-specification-id='0' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type-v2='color' w='48244' x='49851' y='27321'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='39' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='8629' id='6' mode='checkdropdown' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type-v2='filter' w='48244' x='49851' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18358' id='7' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:rating:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='48244' x='49851' y='35955'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8632' id='8' mode='checkdropdown' name='Jumlah Per Brand' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]' type-v2='filter' w='48244' x='49851' y='10058'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48569' id='3' is-fixed='true' name='Jumlah Per Brand' w='21190' x='1905' y='1429'>
+                  <layout-cache cell-count-w='9' minheight='481' non-cell-size-w='80' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48569' id='9' is-fixed='true' name='Harga Per Brand' w='26756' x='23095' y='1429'>
+                  <layout-cache cell-count-w='9' non-cell-size-w='66' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8631' id='12' mode='checkdropdown' name='Jumlah Rilis Per bulan' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]' type-v2='filter' w='48244' x='49851' y='18690'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48573' id='11' is-fixed='true' name='Jumlah Rilis Per bulan' w='23973' x='1905' y='49998'>
+                  <layout-cache cell-count-h='12' minwidth='180' non-cell-size-h='123' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48573' id='13' is-fixed='true' name='Komposisi 5G vs Non-5G per Brand' w='23973' x='25878' y='49998'>
+                  <layout-cache cell-count-w='9' non-cell-size-w='59' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8634' id='14' name='Komposisi 5G vs Non-5G per Brand' pane-specification-id='0' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type-v2='color' w='48244' x='49851' y='27321'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{740A5CE5-20F4-4009-BA43-2675C6EE3675}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='worksheet' name='Jumlah Per Brand'>
+      <cards>
+        <edge name='left'>
+          <strip size='167'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type='filter' />
+            <card param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:rating:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{645FD5D3-D018-423A-841E-451EB65F71EC}' />
+    </window>
+    <window class='worksheet' name='Harga Per Brand'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A6FD80F1-F6A6-4875-B0EE-CDC6B105CCAC}' />
+    </window>
+    <window class='worksheet' name='Jumlah Rilis Per bulan'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:release_month:nk]' type='filter' />
+            <card param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:brand:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{65661B94-0C36-438A-B609-CCECB353E18E}' />
+    </window>
+    <window class='worksheet' name='Komposisi 5G vs Non-5G per Brand'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{ECA0A479-820C-49BB-9657-4C51ACA4AA3B}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Analisis Pasar Smartphone Tahun 2025'>
+      <viewpoints>
+        <viewpoint name='Harga Per Brand'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Jumlah Per Brand'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Jumlah Rilis Per bulan'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Komposisi 5G vs Non-5G per Brand'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0ikbl6o11iv8oz138xem004r5sdk].[none:5g_support:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='27' />
+      <device-preview selected='Phone'>
+        <device is-portrait='false' type='Desktop' />
+        <device name='Fire HD 10' type='Tablet' />
+      </device-preview>
+      <simple-id uuid='{D1A41532-1000-4F95-8F1B-6484E11A700B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Analisis Pasar Smartphone Tahun 2025' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAYnElEQVR4nO3dd3wUdf7H8de29F4JkAAJLWoQAakKyimiguh5cqdY4BT0RPSseDa400NB
+      RCwngoLooYc/pJwgp0gnoUlAitISIIQ00pNNts7M749AJBIkuEtMMp/nPzyY8v1+Z7PvnfKZ
+      nTVomqYhhE4Zf+sBCPFbkgAIXZMACF2TAAhdkwAIXZMACF2TAAhdkwAIXZMACF2TAIhG5SzP
+      Y+rUqUydMQuHeuHrfzF3Bs9MeQ+AJ8eOZMHyDfUut2rRPO595Lnztme+8CEI8evt3LyO9dt2
+      oxRmMPCm2+jXtVWd+W63G7P5p7elorjRNGqn2aqslFe6Abj3oScIi0uqXdblcmG2WDAAl/e7
+      lrCOV9bOUxUFDQMmU93PfNkDiEaVlprGVdcPp3+PrqSlbQZg57qlDLphBOP/fBd9+/bl2alz
+      AHhvyjMM6D+Afv368fjf3+LnN63NefMV0nZnUJ5/lFG338zVV1/NNYOHsDerhB+/W8u0f30C
+      wKezXuWqAf0ZMKA/k96aX6cNCYBoPEoVqVt30rdvP67s3Zu0tDQANFXBqRoY/+wrPDd+FDt3
+      pgNw/e/HsD41jS8+nMam5f/hhLVuc26XE0VV2fPdRgrc4fxv9XqWLfyINuH+qIqCy+UCFJYt
+      WcJDz00nLXUT940YXKcNCYBoNFl7t5NdrrD+q4WkpR8ge993ZFe4ADAHhHJJ50RiY6JOLa3w
+      7dIF3Pmnu3hl5lzAjdtdf7tX9BvMpa3M3DB4IH99cSqVdtcZc03cfd+fWTDzea6/aQSbdh6s
+      s64EQDSa1NRU2na6lPiYCNp37UZssELq5l31LusqOsJHi9cw48NPeXni+F9st8qh8Pc33mfD
+      mm8Iqj7OV2u3nDHXTdcrh/DNmvW89Jc7eH/u/DrrykmwaCQaqalpDBnxV8bdORQAa/YeNm9O
+      o/Og+LOWtoS1IaVDBKN/fwOdk9r/YssnDn/P4y9OJyQkmCqnkYf6dOdketapuSpvvvQoh0sU
+      3HYrN94xrs66BvlCjGiqFJeDwpJKYmOjMJx3WSfFpWWER0RhMf/8wEajorQE1exHWHBgnTkS
+      AKFrcg4gdE0CIHRNAiB0TQIgdE0CIHRNAiB0TQIgdE0CIHRNAiB0TQIA2KqtVFRWNXh5a0U5
+      1TbHWdMrykpwuH5+y6JGSXERJWUVtX0VFRVhd7rOWv+00uIi3D/7tpTqdlFUXFp3HOUlHD+R
+      d9Z98p5yOWyUVVR6udXzs1aUU1RURHFJKar667aq2lpR52+jKS7KK2vuoy4qyOVkcVntPHtV
+      BWhCmz1pgnbL/c80ePkJdw7SJs1efNb0W3onaYvXHfjZ1GotKcyo+UUkauUuTXvsrus1o9Go
+      /Xtl+jnbT4lDO1BUd1rRgXUacSm1///u28+1+PgErVe3ZG3wHQ9rSoNH/5O5r03UXp237Kzp
+      6xbP1nrfcv+vaNEzE+4cpMUnddX69uymte50hZZX4brgNiZNuLPO3+ajqU9pb366Spsz5Qmt
+      Q6dkrXVslDbj4+Xaif1btaQOSZrcDXqGhe+9Sp7vJcQ5fuQoHQgt38X6nZns2bef6393Dd+u
+      XsOr7y+sXf6LD6czb+l6KittfPDZYgDe+vsEXni0hMUrV5PcNqxmwaD2XBnt5NuN21i1I58e
+      XWMBWDz3DWZ/voqg6ATmz5vFa4/exfYcjQIrgMq0v41nw55sEnsOZtKoHnXGuubrlUS1T+Hl
+      Fx+jdXwnig5u4b6nXqcyL4P4lH5k791C617Dmf/Kg4x+4GHKq6rpcd2fuKNPLH9/ez4Wg8a2
+      zWkQsIzkCAPvfzAPpaqYlOvuZHiymdwft9Cj22UMve8JnhzZn9HjHsWpGPjrpOmU717Bl5t/
+      YPeunUx8dTaDkiz85cmXMFgCmPz6O1zZtebuzrEjr8fuG0NGdilLv1zKl+9PZumGPcQl9mT2
+      Kw8waOTDRAaFsnzxp7XbNXTk/fxlRArXDvwDxSUnuGfEwyghwbz7twd4avIMqquqGP/CdCp+
+      +Io16UfYvTOdSW99TFTlHp6ZOg+To4QbL/tDTWOanbfmLOWbvVNZ9NY6vtm0g2/+9QRfrPwa
+      264yBtw2Vg6BzpSblcnR7AJyszLJzMolK/MAHfrfyu2DkiEmhXuG9mLd+u21y4dFxXHdkBuo
+      OPEDG7fvBuD+p17lkpAq0vceOaNlA8OGDWPa3x4lsf+NBJoAqnj28Wd5be4y/PK3Mf+jD3l9
+      /noWLPqEUDOUHt7M828vZsCgq1nyzgvszq2uM9YxjzxDcoyBu++4jWG/H0VxWRnbDuTy+Udv
+      sPSbzSz5bBaLvlyOSzPSf+C1XNGpLZ98tpCKkgI2f5/FlBmzuOvm/tw/cQpdQ93sy7Gx9OOZ
+      vDllOlYgND6F9155khXLVzP/venEdhvKCw/dzjMvvEJuViZEdOWJUTfw9eq1vDnlRRy+0UT7
+      O/nnjPdrx7hn53buefp12hmPs2jhJzz2/Nv0GjCItCXvsG5HJltWrWXMY0/V2a41yxbwtxem
+      EH95H2ICVLavW8WYh57Exz+IwdddT4SPm2VffU320cMEtOnBg7dezarVqcx5+01GP/Eyg3t3
+      rW3LWZBBrk8rYvyNjH92CmU/fMO0uSt4esJDFJzMIyQoTAJQkJvN4azjWCwWTCYTdoeN8vLy
+      2vn+gQFYfHwICArC39fvjDXdTJ74GJZWl5AQHQSnjsSDAoPwMVvO6mf4LcPZvn07I24dcWqK
+      EZPZgMPhwOVyYfHxwQioLgduDTCZMPsFctOwWxg9ZiwxwXXbXL7kc666dSxb1y4l/+AuCqxu
+      /Pz98POx4BsQQHCAPwDbV3/BrEWrufbq/mhazYlFYkoPOreLA8DpcICmoSpu7A4HJl8fTEBg
+      cBA+lpo+LWZz7TjNlpqDhgD/AHz9fAANk9FIp8uuYOQf72TooD51xul2u3E4nPj4+mMy+zHk
+      pmHcN3oM7WKCIaQ1Nw68os7yv7v1bmbMmIE1cyOrN+8HYrhpaG/m/2sqO49VcmW3LrXbEeAf
+      iJ+PL6BhMBrQVPXU1yBrGEwmNKVm2VmvPslto5/mxWlvkxDhx+XdrmD/wb3yhZj/zJnG1iOV
+      vDRtFNH2Qyx6/nXcnTuSnBhPSNRl+MZFgT0ZR1wsEYFdMPvGgak7IXGtGDpsBGlffUablH7E
+      RoRwWY8+RIUFkNy9F7ERQad6MNKnXx8Sewxm1IjhDL+uDz/8tx+xEdG8M2cWUx6/m+hutzH6
+      3tGUHdzGw+Oe4MprhtCmS19mTryTpx6dQPdrbiUhNppB/XrVjrv/wGuZ+MIrfFrlZOqcT7g0
+      PoZ+vbpjCQjjqj49MPoGMahfLzpe2pOEoJVs2X+Mvj0vJywqjh6XdQFg8JCbmfTGTDr86S4c
+      pdmMnjCZf/xzMnFRgfS4rAtBEbH06p7MmAn3sHX847y10Mi706eRu2UJCvHERgSSbPblgZt/
+      z8OPTeTdvf68Mv3tOq/vO/94AkubAfxx5J8Is+fyj6ceJan7NSQmxDLoqj51PoE7JndnyZoV
+      PLz5K4bc8zS3DO7FgkH9sAB9B17Hzs/XUtqpNV2SEmhnMBEREkccdro44hhw7fO8+PrrJLVv
+      zWVxNV+rtER3opO5iGyrm+92pNMxsS2ffvA2O/oM5d1Jz7Ft3Fj5PoCAQxv/y+0vLmDvhkVe
+      bXdQSiteXvwjAztHeLXdC/Hfua9xyHQZT48eVu98CYDQNd2fAwh9u6gBUNVf8ew7IRrRRQ2A
+      HF2Jpk4OgYSuSQCErkkAhK5JAISuSQCErjX6rRDfZC73uI0bkoZ7YSRCeCEAuXl5xEVHkFtQ
+      RHBQMGXWahLatDrn8qsyV3japQRAeI3HAVDcCph8MBsVcgqKaB1oocKtEWhQUVX1otQC3Od6
+      ULwQF8jjADjtVZSezCGn0EpMRAgFVQ6SzAZMmAAwmUweD/LnzvwNKSE84fE7KalTza21EbEe
+      j0WIRidXgYSutehjica84iRXt5qnFh2AxrziJFe3mqcWHYCWSvY23iMBaIZkb+M9chIsdM3j
+      ADidzp/+1RRKSsvOs4YQTYfHh0AZGRlc0qUTGUeyCA/2A0WlOiQUX1pGJVjvfeVX52J32zzq
+      q31IkkfrX0weB8CgKZRbq1FcdpxOEzabkwijAZOhZVSC9d7XlwcXkVl6yKO+3hgy26P1LyaP
+      X/HkS1MASEmp+VdVVYzn+1VjIZoIr3/kGI1yXi1+nYySgx630TGiywUtL5dBRZMxa8cMj9u4
+      0MMtCYDQpdN7GwmA0KXTexs5YBe6JgEQuua1SnBJSQmaVIJFM+OVSnBiq0gcmoGduw7QOipI
+      KsEtqC9v/P2a4nad5pVKsNXmoNxux2IxUW61SSW4BfVlMHhe1WyK21W7vKcdnq4ER6gqRqNR
+      KsGiWfHaSfDpCrBUgkVzIu9WoWsSAKFrEgChaxIAoWsSAKFrXgqARklJiXwnWDQ7XqlQWAty
+      cJjMpH9/mNaR/lIJbkF9SSW4AYKiYji0ayf+gZFSCW5hfUkluCFMPnTv0VsqwaLZkUqw0DV5
+      twpdkwAIXZMACF2TAAhdkwAIXZMACF3zSh3AbS0iI68YTfXBqLpI7NoZi9QCRDPglQC4HAqa
+      yYy9ykZCVBB2RcPYQn4oW+996fJWiPT0dHr27NngRvwjogipdpJ0SRuKS61Emg3QQn4oW+99
+      6fJWiPT0dICGh8Bgok18PABxsX4XNAAhfkvnPAlOT09n+XLPf41QiKas3j3AuHHjGnscQvwm
+      6g1AdVkhO/bsB3zoN7AvlkYelBCNpd5DoICwaDrExxEY6M9FuIgjRJNxznOAsrIS9u/bg1tt
+      zOEI0bjqDYCtopiMrDwiwyPRpKAlWrB6zwH8QyLpfklHDmTmN+j43+20cTTjEG5LKEa3UyrB
+      otk4Z9UgJ68Ak9OGTQWf89wxZPbxxzconACjET+MUgluQX3pshKsOqtR3S5OlNsZ3MDCWkxM
+      DD4mKCiRSnBL6kuXlWBNdeEy+JIQ509Dz4H9/GoqwFIJFs1JvQc3msvBoUOHOFlajhzKi5as
+      3j2AOTiGvzz0YGOPRYhGV/8eQFVJ35bGpk1bcTX2iIRoRPUGwF5VTlbWUTZv3oHS2CMSohHV
+      XwcIDqdbz974qLtwKeDn/Qs5QjQJ9e4BqssKyc3JJ6R1uwa/+UuLCnEr8nRo0bzUuwcICIvG
+      rO3BbWjYfaDO8gKO5JUSWWXD16DJ06FbUF+6LIQBuBUF30DfhrViMBMc5EtpSRn+vj7ydOgW
+      1JcuC2EAHTt2JK+wskF1AJ+QSDoGhWPsIE+HFs3LL97lc+LwIaoaeBlIng4tmqN69wCKvZJN
+      mzaSX2kgSK4AiRas3gCY/IL546jRnDxyGKsbQhvvEE6IRvWLb+2YxE6NNQ4hfhNywC50TQIg
+      dM1rvxNcWJCP0+WSSrBoVrxyeqs5Ssg8UUZbpwuTpkoluAX1pdtK8IVQjYG0iSyhsLgSfx+j
+      VIJbUF+6rQRfCJPFjzYJScS3l0qwaF7kd4KFrsm7VeiaBEDomgRA6JoEQOiaBEDomgRA6JrX
+      AvDD9u0cP5nHwf2HcMmPaohmwiuFsOqyAkorbThKq2gX7CdPh25BfcmtEA0QEBZLnwGhYIIi
+      eTp0i+pLboVoIIs8HVo0Q3ISLHRNAiB0TQIgdE0CIHRNAiB0TQIgdM07X4l0O8nLOUa5zYJJ
+      c8nvBItmwysBMJgsGIxmHA47CZGBUgluQX1JJbgBVJcdt2YhuWscpWVVUgluQX1JJbgBTD7+
+      JCTEAxAX6++NJoVoFHISLHRNAiB0TQIgdE0CIHRNAiB0TQIgdM1rdYDc/Fwqq8CouaUSLJoN
+      71SC0bA5TQQHmfDHLJXgFtSXVIIbQFU1jAaF0NAIrNUOqQS3oL6kEtwAJt8AkhITAQgODvZG
+      k0I0CjkJFromARC6JgEQuiYBELomARC6JgEQuuadACguMo8ex1peQsaRY6heaVSIi887FQqT
+      hQA/CxVVNmJ8jVS4NYKlEtwi+pJKcANoigu73U5ocBBF1U46mA0YpBLcIvqSSnADGEwWOnTo
+      AECENxoUopHISbDQNQmA0DUJgNA1CYDQNa8GoFh+JVI0M14NgN2pEBXsh0MqYaKZ8GoA4mKj
+      cFoCCPL+pX8hLgqDdhFKtZqmoao1lWCjsW7GMksPedx+Unjnevv8edFG+vK8r9zKbGxum1f7
+      qq8fuDjbdb6+LkoATqsvANKX9NWUtumijqKhG1lUXIRiKye3uBJN09A0DafTyYUk8xf70twc
+      zTxCQWEJbpcL9VT7RSfzyDp2nJz8gtp+FUXxrC9AdVaTdTwHa7Udp9MJmobT6ULTVBRVJT+/
+      oGa6p9sFOKsrKCwspLCoBKeioSgqituFW1FxuZy4XC6cNhsNuUOmYX8vjayjmeQVFP70Wrrc
+      aKqCy9Ww+3Aa+r5wV5dxLLeopm23guJyoagaBfn53nn9VMfF3QM0VHVpPpkn7QT5GbCYTBgM
+      TuzVBsx+vrSLb+1x+2pFLnlqLEplDvbqKlRbFS6zLwaLH75GE0YfE2YNwE15USkdu/ckwPzr
+      74EpPpGNMSKC0uPHMIcEUlhgIyTIF4sFVEwYnWWU2oy0bptIbGSgx9uXlppKSlJbTqp+FOXl
+      EhsZBhhxO8pwq0aUSgvt+yQT5HFPgFpBdp6KplTidNiw+CiU5VRjjo3AzwBJiR280QsARzMO
+      UW5zERrkj6YZ0BQ3Jh9fqgtzUPyCiO94KWF+HnyGa4r3fineEwHhsYRZTxAcHIyPEeyYMVKK
+      f0iYV9o3hrSC49n4B4YSHhaO6rJRarUTEhpORGgwZWVl2KutqAYfoltZ0BQNPAhARFwsx0/k
+      ExIZTbXNTruEWOxOFwaXjdIqB23j2mIssxIS5OvxtrlslXTr3h1bRSWBPmbMMdEE+/uiGs34
+      +4ShAbYyJz4e93SKMQQzxzH6B1JtLSc8KoLiQiPx4SE43N69/BcZ04oYIK+wgICgMCpLThIa
+      GUNogIVym4tAi6cHMFrT2APohdvlBKMZs6ll1B8VRcFkMqAoYLqI21TTj6n2X2+SAAhdaxkf
+      RUL8ShIAoWsSAKFrEgChaxKAJmjD8gVMnjmvwcsvmjeTeYtWnTV95uQn2bAr86zpT44dyciR
+      Ixl1z718suRbju1cx7C7x5O5awOPPPcaW/73GQ88PaXevhxFmYwcWbP+uPF/5UDWyfOOb97M
+      ySxatfWc81977pF6x9kYmkQdQNRlLSshr8DOvu0bOekOJsZcSY7dj3BKycwpJiPjKH369GTr
+      1u+4/e4HKC0qoMzdlpyMfSz4v2XgG8KYB8ZSkHeCtSuXsulrePCRCUQH19QdTmQdYfz0pYSX
+      pnP/y7O5bvYkevdIwVFtJTsnn/CYflx+iZmcjL18snAJIa06MfbPd+FjBM3t4EienXVrFjHn
+      5adYsOhLxg7rxYJFX5KQ3JO7bh/CZx98hEOzcOeDYwgEigry2J23kkPpGxnz4HgObF5JTHJ/
+      Tu7fTHjH3uTnZGOtdrDvu40sW7mGkFaJjL3/XpZ98h4GvxCOn6xiwiMP4u9BbeZcZA/QhB34
+      fiupO/Zx4PutrN/6Pd9vXU/6oXwM1hy+XLcTP2cRS1euq10+I+Mwl/cZyIm9G1ixbhsAIdFt
+      ydufyqYdP9Zpe9a0l/jHmx8wZOiNOMpOkrptV+284vzj7Nh9gE/nvosrIA4f1UqVzfXTys5S
+      Xn7pJb7dso/LL0/mxacfp3XylaQumc3a9EN88e85HCtx1Pl0jW7XlRhTGXM/W0bq6hUcOJZP
+      6uoV7Ms8UbvM4cMHGXj9zWxY8iHbfjjBsoUf4Q5szfavF7D7SJF3X9xTJABNkNPlwmA0cPrz
+      7sxSTUJiF9q1aUVCh84kJrRBVX+6dyl981rWb07HZLHgdtdM73ppN2IjQlHVulXaMRMmEh0A
+      Xbp0Oec4/jDqAajIZvnSRWzaeeCnGYqF20bdzeyP/8Md13ejqLASe7WVbn2vIcSvZtRjHhzH
+      mXXuqOgYoqMiqaiooGbDtLrPHNKcrF35Fek/ZGKxmFBOPd8nuVtPIkMDUNznv0fr15AANDEf
+      vvEi0z/4gj69etIusT3rl3/Gio3pDVq3oqKC4pO5WO0K6nnqm0HBYdw2Yjj/t3DhOZ/kl7b2
+      fxwvqCAsqhUJraPPmGMmOSWFdm1aAcGMuudWUlf/j9Tte2gdFwv87CY0kx8Ht33Nx8vWMfS6
+      a2nfvgPz353Gvqzin5bRFCoqq8k9fgQFC5raOPVZqQQ3MaqioGpgNteU/N1ud4Mf9qRpKoqi
+      1a7rDW63C4PRhOk8d3C63S6MRjNGY/3H6ZqqomgaZpMJNA23opy1XaefJHgxHqZ2LhIAoWty
+      CCR0TQIgdE0CIHRNAiB0TQIgdE0CIHTtogbgQq6wyrJNaxx6Wfb/AbF2OewPyStzAAAAAElF
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Harga Per Brand' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Jumlah Per Brand' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Jumlah Rilis Per bulan' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Komposisi 5G vs Non-5G per Brand' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
